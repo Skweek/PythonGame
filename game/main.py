@@ -6,7 +6,6 @@ if inp in functions:
 	functions[inp]()
 
 while not mainloop.quit:
-	display.Clear()	
 	mainloop.Update()
 
 display.CText("Thanks for playing you lovely human!")

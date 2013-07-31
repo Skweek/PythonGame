@@ -1,4 +1,4 @@
-import display
+import display, enemy
 from random import randint, seed
 
 # this module just creates a room from a random list of 
@@ -9,6 +9,7 @@ class MapRoom:
 	hidden = True
 	type = ""
 	seed()
+	
 	
 	def __init__(self, roomtype="random"):
 		# init code
@@ -40,11 +41,13 @@ class MapRoom:
 		self.hidden = True
 		#
 	def GetSymbol(self):
+		if self.hidden==False:
+			return '?'
 		if self.type=="enemy":
-			return "@"
+			return '@'
 		elif self.type=="item":
-			return "#"
+			return '#'
 		elif self.type=="empty":
-			return "0"
+			return '0'
 		else:
-			return "0"
+			return '0'

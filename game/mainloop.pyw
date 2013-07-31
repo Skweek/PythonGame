@@ -12,6 +12,7 @@ def MainMenu():
 def Update():		
 	# eventually handle player.Update() here
 	# then map.Update()
+	display.Clear()
 	map.Draw()
 	
 	#now what?
@@ -19,6 +20,8 @@ def Update():
 	inp = input()
 	if inp=='q':
 		QuitGame()
+	else: 
+		pass
 	# now we handle map commands
 		
 def QuitGame():

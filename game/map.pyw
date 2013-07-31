@@ -30,7 +30,6 @@ def NewMap(seednum):
 				maprooms.append(room.MapRoom())
 				
 def Draw():	
-	display.Clear()
 	display.TText("Map!")
 		
 	print( '-' * (mapx+2))
