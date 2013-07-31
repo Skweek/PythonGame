@@ -7,7 +7,7 @@ def MainMenu():
 	display.CText("[P]lay")
 	display.CText("[H]elp")
 	display.CText("[Q]uit")
-	map.Seed(1)
+	map.NewMap(1)
 	
 def Update():		
 	# eventually handle player.Update() here

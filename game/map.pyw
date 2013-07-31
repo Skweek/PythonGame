@@ -12,7 +12,7 @@ if mapy > 15:
 maprooms=[]
 
 
-def Seed(seednum):
+def NewMap(seednum):
 	global map, maprooms
 	seed()
 		
